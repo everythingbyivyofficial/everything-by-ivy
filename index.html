@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Everything by Ivy — Where Style Meets Confidence">
+<title>EVERYTHING BY IVY — Luxury Fashion Store</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="top">✨ EVERYTHING BY IVY — Luxury • Quality • Affordable &nbsp; | &nbsp; 🚚 Fast & Reliable Delivery</div>
+
+<header class="header">
+  <div class="head-main">
+    <button class="mobile-menu" onclick="toggleNav()">☰</button>
+    <a class="logo" href="#">
+      <div class="ei">EI</div><strong>EVERYTHING</strong><span>BY IVY</span>
+    </a>
+    <form class="search" onsubmit="event.preventDefault();renderProducts()">
+      <input id="searchInput" placeholder="Search for products, brands or categories...">
+      <button>⌕</button>
+    </form>
+    <div class="actions">
+      <button class="action"><b>♙</b><span class="label">Account</span></button>
+      <button class="action" onclick="showWishlist()"><b>♡</b><span class="label">Wishlist</span></button>
+      <button class="action badge" onclick="openCart()"><b>🛒</b><i id="cartCount" class="count">0</i><span class="label">Cart</span></button>
+    </div>
+  </div>
+  <nav class="nav"><div class="nav-inner">
+    <a href="#">Home</a><a href="#categories">Categories</a><a href="#flash">Flash Sale</a><a href="#best">Best Sellers</a><a href="#new">New Arrivals</a><a href="#bags">Bags</a><a href="#heels">Heels</a><a href="#sandals">Sandals</a><a href="#slippers">Pam Slippers</a><a class="sale" href="#flash">SALE</a>
+  </div></nav>
+</header>
+
+<main class="container">
+<section class="hero">
+  <div class="hero-copy">
+    <div class="kicker">EVERYTHING BY IVY</div>
+    <h1>Where Style<br>Meets Confidence</h1>
+    <p>Trendy pieces. Quality. Affordable. Curated shoes, bags and everyday luxury made for every kind of girl.</p><p style="margin-top:10px;font-size:12px;color:#8a6b50">Collection shown in your Everything by Ivy promotional artwork.</p>
+    <div><a class="btn" href="#best">SHOP NOW →</a></div>
+  </div>
+  <div class="hero-art"><div class="hero-box"><h3>EVERYTHING<br>BY IVY</h3><p style="text-align:center;margin-top:12px">Luxury • Comfort • Everyday</p></div></div>
+</section>
+
+<section class="section" id="categories">
+  <div class="section-head"><h2>Shop By Category</h2><a href="#best">View All →</a></div>
+  <div class="categories">
+    <a class="cat" href="#slippers"><div class="cat-icon">🩴</div><strong>Pam Slippers</strong></a>
+    <a class="cat" href="#bags"><div class="cat-icon">👜</div><strong>Bags</strong></a>
+    <a class="cat" href="#heels"><div class="cat-icon">👠</div><strong>Heels</strong></a>
+    <a class="cat" href="#sandals"><div class="cat-icon">👡</div><strong>Sandals</strong></a>
+  </div>
+</section>
+
+<section class="section flash" id="flash">
+  <div class="section-head"><h2>🔥 Flash Sale</h2><span class="timer" id="timer">Ends in 02:59:59</span></div>
+  <div class="grid" id="flashGrid"></div>
+</section>
+
+<section class="section" id="best">
+  <div class="section-head"><h2>Best Sellers</h2><a href="#">See All →</a></div>
+  <div class="grid" id="bestGrid"></div>
+</section>
+
+<section class="banner">
+  <div><h2>Luxury pieces for every kind of girl.</h2><p>Your next favourite is just a click away.</p></div>
+  <a class="btn" href="#new">EXPLORE COLLECTION</a>
+</section>
+
+<section class="section" id="new">
+  <div class="section-head"><h2>New Arrivals</h2><a href="#">See All →</a></div>
+  <div class="grid" id="newGrid"></div>
+</section>
+
+<section class="section" id="bags">
+  <div class="section-head"><h2>👜 Bags</h2><a href="#">Shop Bags →</a></div>
+  <div class="grid" id="bagGrid"></div>
+</section>
+
+<section class="section" id="heels">
+  <div class="section-head"><h2>👠 Heels</h2><a href="#">Shop Heels →</a></div>
+  <div class="grid" id="heelGrid"></div>
+</section>
+
+<section class="section" id="sandals">
+  <div class="section-head"><h2>👡 Sandals</h2><a href="#">Shop Sandals →</a></div>
+  <div class="grid" id="sandalGrid"></div>
+</section>
+
+<section class="section" id="slippers">
+  <div class="section-head"><h2>🩴 Pam Slippers</h2><a href="#">Shop Slippers →</a></div>
+  <div class="grid" id="slipperGrid"></div>
+</section>
+
+<section class="section">
+ <div class="section-head"><h2>Why Shop With Ivy?</h2></div>
+ <div class="features">
+  <div class="feature"><b>🛡 Quality Products</b><span>Carefully selected fashion pieces with a premium boutique feel.</span></div>
+  <div class="feature"><b>🚚 Fast & Reliable Delivery</b><span>Serving customers with convenient delivery and clear order support.</span></div>
+  <div class="feature"><b>♡ Affordable Prices</b><span>Beautiful pieces at prices designed to keep luxury approachable.</span></div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="footer">
+  <div><h3>EVERYTHING BY IVY</h3><p>Where Style Meets Confidence.</p><p>Trendy pieces. Quality. Affordable.</p><p>📍 Available anywhere within Akure</p></div>
+  <div><h3>SHOP</h3><a href="#bags">Bags</a><a href="#heels">Heels</a><a href="#sandals">Sandals</a><a href="#slippers">Pam Slippers</a></div>
+  <div><h3>HELP</h3><a href="#">Contact Us</a><a href="#">Delivery Information</a><a href="#">Returns</a><a href="#">FAQs</a></div>
+  <div><h3>CONTACT</h3><p>☎ 08168431899</p><p>◉ WhatsApp: 09120940116</p><p>♪ TikTok: @everythingbyivy</p></div>
+ </div>
+ <div class="copy">© 2026 EVERYTHING BY IVY. All rights reserved.</div>
+</footer>
+
+<div class="overlay" id="overlay" onclick="closeCart()"></div>
+<aside class="drawer" id="drawer">
+ <div class="drawer-head"><h2>Your Cart</h2><button class="close" onclick="closeCart()">×</button></div>
+ <div id="cartItems"></div>
+ <div class="cart-total"><span>Total</span><span id="cartTotal">₦0</span></div>
+ <button class="btn" style="width:100%" onclick="checkout()">PROCEED TO CHECKOUT</button>
+</aside>
+
+<div class="modal" id="modal">
+ <div class="modal-box">
+  <div style="display:flex;justify-content:flex-end"><button class="close" onclick="closeModal()">×</button></div>
+  <div id="modalContent"></div>
+ </div>
+</div>
+<script src="js/app.js"></script>
+
+</body>
+</html>
